@@ -29,4 +29,4 @@
       cd ~/Ферма
       ls -l
 
-![Задание 1.PNG](C:\Users\Maxim\Desktop\GB\Итоговая контрольная работа\Задание 2.PNG)
+![Задание 1.PNG](https://github.com/VoldMarius/FinalControlWork/blob/3e878b181514b4e21b6116c1c67340a4d069ffec/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%202.PNG)
