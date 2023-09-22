@@ -19,5 +19,5 @@
     cat "Зверье мое"
     mv "Зверье мое" "Друзья человека"
 
-![Task 1](C:\Users\Maxim\Desktop\ControlWork\Задание 1.PNG)
+![Задание 1](C:\Users\Maxim\Desktop\GB\Итоговая контрольная работа\Задание 1.PNG)
 
