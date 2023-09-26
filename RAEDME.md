@@ -76,3 +76,80 @@
 
    В подключенном MySQL репозитории создать базу данных “Друзья
    человека”
+
+     CREATE DATABASE Друзья человека;
+
+## Задание 8.
+
+   Создать таблицы с иерархией из диаграммы в БД
+      
+      USE  Друзья человека;
+      CREATE TABLE animal_classes
+      (
+      Id INT AUTO_INCREMENT PRIMARY KEY,
+      Class_name VARCHAR(20)
+      );
+      
+      INSERT INTO animal_classes (Class_name)
+      VALUES ('вьючные'),
+      ('домашние');
+      
+      
+      CREATE TABLE pack_animals
+      (
+      Id INT AUTO_INCREMENT PRIMARY KEY,
+      nickname VARCHAR (20),
+      Class_id INT,
+      FOREIGN KEY (Class_id) REFERENCES  animal_classes (Id) ON DELETE CASCADE ON UPDATE CASCADE
+      );
+      
+      INSERT INTO pack_animals (nickname, Class_id)
+      VALUES ('Лошади', 1),
+      ('Ослы', 1),  
+      ('Верблюды', 1);
+      
+      CREATE TABLE pets 
+      (
+      Id INT AUTO_INCREMENT PRIMARY KEY,
+      nickname VARCHAR (20),
+      Class_id INT,
+      FOREIGN KEY (Class_id) REFERENCES animal_classes (Id) ON DELETE CASCADE ON UPDATE CASCADE
+      );
+      
+      INSERT INTO pets (nickname, Class_id)
+      VALUES ('Кошки', 2),
+      ('Собаки', 2),  
+      ('Хомяки', 2);
+
+      После выполнения данных команд таблицы будут выглядеть следующим образом:
+      
+      Таблица animal_classes:
+      +----+------------+
+      | Id | Class_name |
+      +----+------------+
+      |  1 | вьючные    |
+      |  2 | домашние   |
+      +----+------------+
+      
+      Таблица pack_animals:
+      +----+-----------+----------+
+      | Id | nickname  | Class_id |
+      +----+-----------+----------+
+      |  1 | Лошади    |        1 |
+      |  2 | Ослы      |        1 |
+      |  3 | Верблюды  |        1 |
+      +----+-----------+----------+
+      
+      Таблица pets:
+      +----+----------+----------+
+      | Id | nickname | Class_id |
+      +----+----------+----------+
+      |  1 | Кошки    |        2 |
+      |  2 | Собаки   |        2 |
+      |  3 | Хомяки   |        2 |
+      +----+----------+----------+
+
+## Задание 9.
+
+   Заполнить низкоуровневые таблицы именами(животных), командами
+   которые они выполняют и датами рождения
