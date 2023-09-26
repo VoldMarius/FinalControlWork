@@ -41,10 +41,10 @@
       sudo apt-get install mysql-server
 
 
-![Задание 3.1.PNG](https://github.com/VoldMarius/FinalControlWork/blob/a03366152ff47ec5ccb7178764629f1b06b6a6cd/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
-![Задание 3.2.PNG](https://github.com/VoldMarius/FinalControlWork/blob/a03366152ff47ec5ccb7178764629f1b06b6a6cd/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
-![Задание 3.3.PNG](https://github.com/VoldMarius/FinalControlWork/blob/a03366152ff47ec5ccb7178764629f1b06b6a6cd/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
-
+![Задание 3.1.PNG](https://github.com/VoldMarius/FinalControlWork/blob/8d0a29aaf3d25c9cddada872def20efa331ed01e/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
+![Задание 3.2.PNG](https://github.com/VoldMarius/FinalControlWork/blob/8d0a29aaf3d25c9cddada872def20efa331ed01e/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
+![Задание 3.3.PNG](https://github.com/VoldMarius/FinalControlWork/blob/8d0a29aaf3d25c9cddada872def20efa331ed01e/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA).PNG)
+![Задание 3.Настройка.PNG](https://github.com/VoldMarius/FinalControlWork/blob/8d0a29aaf3d25c9cddada872def20efa331ed01e/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20(%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0).PNG)
 
 ## Задание 4.
    Установить и удалить deb-пакет с помощью dpkg.
