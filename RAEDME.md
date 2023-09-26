@@ -291,3 +291,30 @@
                                                                   таблиц "horses" и "donkeys"
                                                        
       UNION SELECT  Name, Birthday, Commands FROM donkeys;  =>  и выводит их столбцы "Name", "Birthday" и "Commands". 
+
+## Задание 11.
+
+ Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет
+ и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице
+
+         CREATE TABLE молодые_животные AS
+         SELECT
+            Name,
+            Birthday,
+            TIMESTAMPDIFF(MONTH, Birthday, CURDATE()) AS Возраст_в_месяцах
+         FROM
+                (SELECT
+                  Name,
+                  Birthday
+               FROM
+                  horses
+               UNION ALL SELECT
+                  Name,
+                  Birthday
+               FROM
+                   donkeys) AS combined
+         WHERE
+             Birthday >= DATE_SUB(CURDATE(), INTERVAL 3  YEAR)
+             AND Birthday <= DATE_SUB(CURDATE(), INTERVAL 1 YEAR);
+
+
