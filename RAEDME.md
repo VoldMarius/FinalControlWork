@@ -318,3 +318,32 @@
              AND Birthday <= DATE_SUB(CURDATE(), INTERVAL 1 YEAR);
 
 
+
+## Задание 12. 
+
+ Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
+
+      SELECT h.Name, h.Birthday, h.Commands, pa.typeOfanimal, ya.Возраст_в_месяцах
+      FROM horses h
+      LEFT JOIN молодые_животные ya ON ya.Name = h.Name
+      LEFT JOIN pack_animals pa ON pa.Id = h.typeOfanimal
+      UNION
+      SELECT d.Name, d.Birthday, d.Commands, pa.Genus_name, ya.Возраст_в_месяцах
+      FROM donkeys d
+      LEFT JOIN молодые_животные ya ON ya.Name = d.Name
+      LEFT JOIN pack_animals pa ON pa.Id = d.typeOfanimal
+      UNION
+      SELECT c.Name, c.Birthday, c.Commands, ha.typeOfanimal, ya.Возраст_в_месяцах
+      FROM cats c
+      LEFT JOIN молодые_животные ya ON ya.Name = c.Name
+      LEFT JOIN pets ha ON ha.Id = c.typeOfanimal
+      UNION
+      SELECT d.Name, d.Birthday, d.Commands, ha.typeOfanimal, ya.Возраст_в_месяцах
+      FROM dogs d
+      LEFT JOIN молодые_животные ya ON ya.Name = d.Name
+      LEFT JOIN pets ha ON ha.Id = d.typeOfanimal
+      UNION
+      SELECT hm.Name, hm.Birthday, hm.Commands, ha.typeOfanimal, ya.Возраст_в_месяцах
+      FROM hamsters hm
+      LEFT JOIN молодые_животные ya ON ya.Name = hm.Name
+      LEFT JOIN pets ha ON ha.Id = hm.typeOfanimal;
