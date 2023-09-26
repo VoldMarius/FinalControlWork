@@ -105,7 +105,7 @@
       typeOfanimal VARCHAR (100),Class_id INT,
       FOREIGN KEY (Class_id) REFERENCES animal_classes (Id) ON DELETE CASCADE ON UPDATE CASCADE);
 
-      После выполнения данных команд таблицы будут выглядеть следующим образом:
+После выполнения данных команд таблицы будут выглядеть следующим образом:
       
          Таблица animal_classes:
          +----+------------+
@@ -166,10 +166,10 @@
       Foreign KEY (typeOfanimal) REFERENCES pets (Id) ON DELETE CASCADE ON UPDATE CASCADE
       );
       INSERT INTO dogs (Name, Birthday, Commands, typeOfanimal)
-      VALUES ('Дик', '2020-01-01', 'ко мне, лежать, лапу, голос', 2),
-      ('Граф', '2021-06-12', "сидеть, лежать, лапу", 2),  
-      ('Шарик', '2018-05-01', "сидеть, лежать, лапу, след, фас", 2),
-      ('Босс', '2021-05-10', "сидеть, лежать, фу, место", 2);
+      VALUES ('Мухтар', '2021-05-05', 'Аппорт!,Рядом!, Место!, Фу!',  2),
+             ('Зевс',   '2018-03-10', 'Барьер!,След!,Взять!',         2),  
+             ('Матис',  '2020-09-11', 'Жди!,Вперед!,Лежать!,Сидеть!', 2),
+      
       
       CREATE TABLE hamsters
       (       
@@ -181,10 +181,9 @@
       Foreign KEY (typeOfanimal) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
       );
       INSERT INTO hamsters (Name, Birthday, Commands, typeOfanimal)
-      VALUES ('Малой', '2020-10-12', '', 3),
-      ('Медведь', '2021-03-12', "атака сверху", 3),  
-      ('Ниндзя', '2022-07-11', NULL, 3),
-      ('Бурый', '2022-05-10', NULL, 3);
+      VALUES   ('Чип',  '2022-01-12', 'Все!!',         3),
+               ('Дейл', '2022-01-12', 'Нет  не Все!!', 3),  
+       
       
       CREATE TABLE horses
       (       
@@ -192,29 +191,30 @@
       Name VARCHAR(20),
       Birthday DATE,
       Commands VARCHAR(50),
-      Genus_id int,
-      Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+      typeOfanimal int,
+      Foreign KEY (typeOfanimal) REFERENCES pack_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
       );
-      INSERT INTO horses (Name, Birthday, Commands, Genus_id)
-      VALUES ('Гром', '2020-01-12', 'бегом, шагом', 1),
-      ('Закат', '2017-03-12', "бегом, шагом, хоп", 1),  
-      ('Байкал', '2016-07-12', "бегом, шагом, хоп, брр", 1),
-      ('Молния', '2020-11-10', "бегом, шагом, хоп", 1);
+
+      INSERT INTO horses (Name, Birthday, Commands, typeOfanimal)
+      VALUES ('Грей',   '2016-05-15', 'Аллюр!,Рысь!',           1),
+             ('Апал',   '2019-07-16', 'Аллюр!,Рысь!,Яблоко!',   1),  
+             ('Стелс',  '2020-09-19', 'Вперед!,Ногу!,Але!',     1),
+             ('Тесла',  '2018-01-30', 'Вперед!,Аллюр!,Рысь!',   1);
       
       CREATE TABLE donkeys
       (       
       Id INT AUTO_INCREMENT PRIMARY KEY,
-      Name VARCHAR(20),
+      Name VARCHAR(50),
       Birthday DATE,
-      Commands VARCHAR(50),
-      Genus_id int,
-      Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+      Commands VARCHAR(100),
+      typeOfanimal int,
+      Foreign KEY (typeOfanimal) REFERENCES pack_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
       );
-      INSERT INTO donkeys (Name, Birthday, Commands, Genus_id)
-      VALUES ('Первый', '2019-04-10', NULL, 2),
-      ('Второй', '2020-03-12', "", 2),  
-      ('Третий', '2021-07-12', "", 2),
-      ('Четвертый', '2022-12-10', NULL, 2);
+      INSERT INTO donkeys (Name, Birthday, Commands, typeOfanimal)
+      VALUES  ('Гриша', '2010 -04 -01', 'Тупой ..',         2),
+              ('Вася',  '2011 -03 -01', 'Ужас какой Тупой', 2),  
+              ('Федя',  '2023 -07 -01', 'Тайна! ',          2),
+            
       
       CREATE TABLE camels
       (       
@@ -222,11 +222,43 @@
       Name VARCHAR(20),
       Birthday DATE,
       Commands VARCHAR(50),
-      Genus_id int,
-      Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+      typeOfanimal int,
+      Foreign KEY (typeOfanimal) REFERENCES pack_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
       );
-      INSERT INTO camels (Name, Birthday, Commands, Genus_id)
-      VALUES ('Горбатый', '2022-04-10', 'вернись', 3),
-      ('Самец', '2019-03-12', "остановись", 3),  
-      ('Сифон', '2015-07-12', "повернись", 3),
-      ('Борода', '2022-12-10', "улыбнись", 3);
+      INSERT INTO camels (Name, Birthday, Commands, typeOfanimal)
+      VALUES     ('Cammel',        '2020-01-01', 'Всань!', 3),
+                 ('Cammel-Trophy', '2020-02-02', 'Ляж  !', 3),  
+
+После выполнения данных команд таблицы будут выглядеть следующим образом:
+
+            Таблица cats:
+            
+            | Id | Name   | Birthday   | Commands | typeOfanimal |
+            |----|--------|------------|----------|--------------|
+            | 1  | Мурка  | 2022-02-05 | Спать!   | 1            |
+            | 2  | Жулька | 2020-12-12 | Танцуй   | 1            |
+            | 3  | Рыська | 2019-08-08 | Але Оп!  | 1            |
+            
+            Таблица dogs:
+            
+            | Id | Name    | Birthday   | Commands                     | typeOfanimal |
+            |----|---------|------------|------------------------------|--------------|
+            | 1  | Мухтар  | 2021-05-05 | Аппорт!,Рядом!, Место!, Фу!  | 2            |
+            | 2  | Зевс    | 2018-03-10 | Барьер!,След!,Взять!         | 2            |
+            | 3  | Матис   | 2020-09-11 | Жди!,Вперед!,Лежать!,Сидеть! | 2            |
+            
+            Таблица hamsters:
+            
+            | Id | Name  | Birthday   | Commands         | typeOfanimal |
+            |----|-------|------------|------------------|--------------|
+            | 1  | Чип   | 2022-01-12 | Все!!            | 3            |
+            | 2  | Дейл  | 2022-01-12 | Нет не Все!!     | 3            |
+            
+            Таблица horses:
+            
+            | Id | Name   | Birthday   | Commands             | typeOfanimal |
+            |----|--------|------------|--------------------  |--------------|
+            | 1  | Грей   | 2016-05-15 | Аллюр!,Рысь!         | 1            |
+            | 2  | Апал   | 2019-07-16 | Аллюр!,Рысь!,Яблоко! | 1            |
+            | 3  | Стелс  | 2020-09-19 | Вперед!,Ногу!,Але!   | 1            |
+            | 4  | Тесла  | 2018-01-30 | Вперед!,Аллюр!,Рысь! | 1            |
