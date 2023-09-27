@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 
     protected int petId;
     protected String name;
+    protected String CommandList;
     protected LocalDate birthday;
 
     public void setPetId(int petId) {
@@ -16,15 +17,24 @@ import java.time.format.DateTimeFormatter;
         return petId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCommandList(String Command) {
+        this.CommandList = Command;
     }
 
-    public String getName() {
-        return name;
+    public String getCommandList() {
+        return CommandList;
     }
 
-    public void setBirthday(LocalDate date) {
+     public void setName(String name) {
+         this.name = name;
+     }
+
+     public String getName() {
+         return name;
+     }
+
+
+     public void setBirthday(LocalDate date) {
         this.birthday = date;
     }
 
