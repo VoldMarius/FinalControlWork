@@ -347,3 +347,86 @@
       FROM hamsters hm
       LEFT JOIN молодые_животные ya ON ya.Name = hm.Name
       LEFT JOIN pets ha ON ha.Id = hm.typeOfanimal;
+
+## Задание 13. 
+
+Создать класс с Инкапсуляцией методов и наследованием по диаграмме.
+
+      public class Main {
+      public static void main(String[] args) {
+     
+      // Родительский класс Животное
+         public class Animal {
+            private String name;
+            private int age;
+      
+          public Animal(String name, int age) {
+              this.name = name;
+              this.age = age;
+          }
+      
+          public String getName() {
+              return name;
+          }
+      
+          public int getAge() {
+              return age;
+          }
+        }
+      
+      // Класс Домашнее животное, наследуется от Животное
+         public class Pet extends Animal {
+            public Pet(String name, int age) {
+            super(name, age);
+            }
+         }
+      
+               // Класс Собака, наследуется от Домашнее животное
+               public class Dog extends Pet {
+                     public Dog(String name, int age) {
+                     super(name, age);
+                      }
+               }
+               
+               // Класс Кошка, наследуется от Домашнее животное
+               public class Cat extends Pet {
+                     public Cat(String name, int age) {
+                     super(name, age);
+                    }
+               }
+               
+               // Класс Хомяк, наследуется от Домашнее животное
+               public class Hamster extends Pet {
+                     public Hamster(String name, int age) {
+                     super(name, age);
+                     }
+               }
+      
+      // Класс Вьючное животное, наследуется от Животное
+      public class PackAnimal extends Animal {
+            public PackAnimal(String name, int age) {
+               super(name, age);
+            }
+      }
+      
+               // Класс Лошадь, наследуется от Вьючное животное
+               public class Horse extends PackAnimal {
+                     public Horse(String name, int age) {
+                     super(name, age);
+                     }
+               }
+               
+               // Класс Верблюд, наследуется от Вьючное животное
+                     public class Camel extends PackAnimal {
+                     public Camel(String name, int age) {
+                     super(name, age);
+                     }
+               }
+               
+               // Класс Осел, наследуется от Вьючное животное
+                     public class Donkey extends PackAnimal {
+                     public Donkey(String name, int age) {
+                     super(name, age);
+                     }
+               }
+      }
