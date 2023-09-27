@@ -1,17 +1,16 @@
 public enum PetType {
 
-        Cat,
+        Hamster,
         Dog,
-        Hamster;
-
+        Cat;
         public static PetType getType (int typeId){
             switch (typeId){
                 case 1:
-                    return PetType.Cat;
+                    return PetType.Hamster;
                 case 2:
                     return PetType.Dog;
                 case 3:
-                    return PetType.Hamster;
+                    return PetType.Cat;
                 default:
                     return null;
             }
