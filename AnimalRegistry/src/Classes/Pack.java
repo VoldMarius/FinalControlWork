@@ -1,19 +1,35 @@
+package Classes;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
-public class Pack {
+public abstract class Pack implements All_Registry<Pack> {
 
-    protected int petId;
+    protected int packId;
+    protected String PackType;
+
     protected String name;
     protected String CommandList;
     protected LocalDate birthday;
 
+    public Pack(int packId, String PackType, String name, String command, String birthday) {
+    }
+
     public void setPackId(int petId) {
-        this.petId = petId;
+        this.packId = petId;
     }
 
     public int getPackId() {
-        return petId;
+        return packId;
+    }
+
+    public void setPackType(String PackType) {
+        this.PackType = PackType;
+    }
+
+    public String getPackType() {
+        return PackType;
     }
 
     public void setCommandList(String Command) {
@@ -37,19 +53,13 @@ public class Pack {
         this.birthday = date;
     }
 
-    public LocalDate getBirthdayDate(){
-        return birthday;
-    }
 
     public String getBirthday() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-        return formatter.format(birthday);
-    }
 
-    @Override
-    public String toString() {
-        return String.format("%d. %s: имя: %s, дата рождения: %s ", getPackId(), getClass().getSimpleName(),
-                name, getBirthday());
+            return String.format("%d. %s: имя: %s, дата рождения: %s ", getPackId(), getPackType(), getName(),
+                    getCommandList(), getBirthday());
+        }
+
+
     }
-}
 

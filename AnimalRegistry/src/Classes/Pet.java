@@ -1,20 +1,33 @@
+package Classes;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
- public abstract class Pet {
+public abstract class Pet {
 
     protected int petId;
+    protected String PetType ;
     protected String name;
     protected String CommandList;
     protected LocalDate birthday;
 
-    public void setPetId(int petId) {
+    public Pet(int petId,String PetType ,  String name, String command ,  String birthday) {
+     }
+
+     public void setPetId(int petId) {
         this.petId = petId;
     }
 
     public int getPetId() {
         return petId;
+    }
+    public void setPetType(String PetType) {
+        this.PetType = PetType;
+    }
+
+    public String getPetType() {
+        return PetType;
     }
 
     public void setCommandList(String Command) {
@@ -38,9 +51,6 @@ import java.time.format.DateTimeFormatter;
         this.birthday = date;
     }
 
-    public LocalDate getBirthdayDate(){
-        return birthday;
-    }
 
     public String getBirthday() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
@@ -49,8 +59,18 @@ import java.time.format.DateTimeFormatter;
 
     @Override
     public String toString() {
-        return String.format("%d. %s: имя: %s, дата рождения: %s ", getPetId(), getClass().getSimpleName(),
-                name, getBirthday());
+        return String.format("%d. %s: имя: %s, дата рождения: %s ", getPetId(),getPetType() ,getName(),
+                getCommandList(), getBirthday());
     }
+
+    public abstract List<Pet> getAll();
+
+    public abstract Pet getById(int id);
+
+    public abstract int create(int type, String name, LocalDate date);
+
+    public abstract int update(Pet item);
+
+    public abstract void delete(int item);
 }
 
