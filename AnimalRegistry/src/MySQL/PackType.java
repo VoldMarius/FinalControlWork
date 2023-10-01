@@ -1,16 +1,18 @@
+package MySQL;
+
 public enum PackType {
 
-    Camel,
-    Horse,
-    Donkey ;
+    Верблюд,
+    Лошадь,
+    Осел ;
     public static PackType getType (int typeId){
         switch (typeId){
             case 1:
-                return PackType.Camel;
+                return PackType.Верблюд;
             case 2:
-                return PackType.Horse;
+                return PackType.Лошадь;
             case 3:
-                return PackType.Donkey;
+                return PackType.Осел;
             default:
                 return null;
         }

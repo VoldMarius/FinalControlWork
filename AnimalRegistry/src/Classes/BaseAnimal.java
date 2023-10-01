@@ -1,30 +1,35 @@
 package Classes;
 
+import MySQL.ClassType;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
-public abstract class BaseAnimal {
-    protected String name;        // Имя животного
-    protected String mainClass;   // Класс животного
-    protected String Type;        // Тип животного
-    protected Date birthday;      // Дата рождения
+public abstract class BaseAnimal<T,C> {
+    private  int petId;                // Id животного
+    protected String name;             // Имя животного
+    protected C Ctype;                 // Класс животного
+    protected int Type;                  // Тип животного
+    protected LocalDate birthday;      // Дата рождения
 
-    protected ArrayList Commands; // Команды для дрессировки
+    protected ArrayList Commands  ;    // Команды для дрессировки
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-    public BaseAnimal (String name, String mainClass, String Type, String birthday, ArrayList Commands) throws ParseException {
+    public BaseAnimal ( int petId , String name, C Ctype , int Type,LocalDate birthday, ArrayList Commands) throws ParseException {
+        this.petId = petId;
         this.name = name;
-        this.mainClass = mainClass;
+        this.Ctype = Ctype;
         this.Type = Type;
-        this.birthday = format.parse(birthday);
+        this.birthday =  birthday;
         this.Commands = Commands;
     }
 
     public String getInfo() {
-        String str = mainClass + " " + Type + " " + name + " " + new SimpleDateFormat("yyyy-MM-dd").format(birthday) +
+        String str = petId+ " " + name + " " + Ctype + " " + Type  + " " + new SimpleDateFormat("yyyy-MM-dd").format(birthday) +
                 " " + String.join(" / ",Commands);
         return str;
     }

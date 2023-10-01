@@ -1,16 +1,18 @@
+package MySQL;
+
 public enum PetType {
 
-        Hamster,
-        Dog,
-        Cat;
+        Хомяк,
+        Собака,
+        Кошка;
         public static PetType getType (int typeId){
             switch (typeId){
                 case 1:
-                    return PetType.Hamster;
+                    return PetType.Хомяк;
                 case 2:
-                    return PetType.Dog;
+                    return PetType.Собака;
                 case 3:
-                    return PetType.Cat;
+                    return PetType.Кошка;
                 default:
                     return null;
             }
