@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 
-public abstract class Hamster extends Pet {
+public  class Hamster extends Pet {
 
     public Hamster(int petId, String name, ClassType mainClass, PetType Type, String birthday, ArrayList Commands)
             throws ParseException {
