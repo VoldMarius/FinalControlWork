@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13b0ba15-af03-4108-8beb-1ceb7e693d44" name="Changes" comment="Внес изменения и исправилт ошибки в MySQL" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/RAEDME.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Vk1Hasb0BoCRImUdgQHi88RnpL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/Maxim/Downloads/mysql-connector-j-8.1.0/mysql-connecto/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "terminal"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Classes" />
+      <recent name="MySQL" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maxim\Desktop\GB\Итоговая контрольная работа" />
+      <recent name="C:\Users\Maxim\Desktop\GB\Итоговая контрольная работа\.idea" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="PetAnimal" />
+      <recent name="PackAnimal" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13b0ba15-af03-4108-8beb-1ceb7e693d44" name="Changes" comment="" />
+      <created>1695365177427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695365177427</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавил Скрин к Заданию 1">
+      <created>1695370624841</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370624841</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавил Скрин к Заданию 1">
+      <created>1695370832989</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370832989</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавил Скрин к Заданию 1">
+      <created>1695370933769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370933769</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавил Скрин к Заданию 1">
+      <created>1695371060739</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695371060739</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавил Скрин к Заданию 1">
+      <created>1695371164985</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695371164985</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавил Скрин к Заданию 1">
+      <created>1695371279746</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695371279746</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавил Скрин к Заданию 1">
+      <created>1695371337583</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695371337583</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавил Скрин к Заданию 2">
+      <created>1695375367548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375367548</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Добавил Скрин к Заданию 2">
+      <created>1695375528436</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375528436</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Добавил Скрин к Заданию 2">
+      <created>1695375583501</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375583501</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Исправил команду cd~/Ферма">
+      <created>1695375677719</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375677719</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Третье задания и три снимка">
+      <created>1695377091783</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695377091783</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Третье задания и три снимка">
+      <created>1695377183664</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695377183664</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Третье задания и три снимка">
+      <created>1695377358612</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695377358612</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Четвертое задание">
+      <created>1695694533750</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695694533750</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Четвертое задание">
+      <created>1695694882340</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1695694882340</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Четвертое задание со скрином">
+      <created>1695694961361</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695694961361</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Пятое задание">
+      <created>1695696278524</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1695696278524</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Шестое задание Диаграмма">
+      <created>1695696309599</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1695696309599</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Шестое задание Диаграмма">
+      <created>1695696718631</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695696718631</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Восьмое задание с таблицей">
+      <created>1695727557799</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695727557799</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Восьмое задание с таблицей">
+      <created>1695728255877</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1695728255877</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Восьмое задание с таблицей">
+      <created>1695729076401</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1695729076401</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Девятое  задание с таблицей">
+      <created>1695730571527</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695730571527</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Девятое  задание с таблицей">
+      <created>1695731603657</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1695731603657</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Десятое   задание">
+      <created>1695732278654</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1695732278654</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Одинадцатое   задание">
+      <created>1695732884776</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1695732884776</updated>
+    </task>
+    <task id="LOCAL-00031" summary="12  задание">
+      <created>1695734235931</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1695734235931</updated>
+    </task>
+    <task id="LOCAL-00032" summary="12  задание">
+      <created>1695797984265</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1695797984265</updated>
+    </task>
+    <task id="LOCAL-00033" summary="13  задание">
+      <created>1695798418316</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1695798418316</updated>
+    </task>
+    <task id="LOCAL-00034" summary="14 задание создал интерфейс All_Animal_Registry">
+      <created>1695799823662</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1695799823662</updated>
+    </task>
+    <task id="LOCAL-00035" summary="14 задание создал интерфейс All_Animal_Registry">
+      <created>1695799890066</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1695799890066</updated>
+    </task>
+    <task id="LOCAL-00036" summary="14 задание создал интерфейс All_Animal_Registry">
+      <created>1695800099530</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1695800099530</updated>
+    </task>
+    <task id="LOCAL-00037" summary="14 задание создал определил класс Pet с перечислением и методами">
+      <created>1695801663258</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1695801663258</updated>
+    </task>
+    <task id="LOCAL-00038" summary="14 задание создал определил класс Pet с перечислением и методами">
+      <created>1695801796389</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1695801796389</updated>
+    </task>
+    <task id="LOCAL-00039" summary="14 задание добавил метод &quot;Команды&quot; для Питомцев">
+      <created>1695802483075</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1695802483075</updated>
+    </task>
+    <task id="LOCAL-00040" summary="14 Добавил класс &quot;Вьючных&quot;">
+      <created>1695804397455</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1695804397455</updated>
+    </task>
+    <task id="LOCAL-00041" summary="14 Добавил класс &quot;Вьючных&quot;">
+      <created>1695809301479</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1695809301479</updated>
+    </task>
+    <task id="LOCAL-00042" summary="14 Создал абстракцию интерфейс и наследие младших классов">
+      <created>1695901953693</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1695901953693</updated>
+    </task>
+    <task id="LOCAL-00043" summary="14  абстакцию и наследие младших классов упростил">
+      <created>1695905795462</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1695905795462</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696055430518</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1696055430518</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696061952219</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1696061952219</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696159304249</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1696159304249</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696159425640</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1696159425640</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696159884085</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1696159884085</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696160392153</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1696160392153</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696160562659</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1696160562659</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696160648555</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1696160648555</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Внес изменения и исправилт ошибки в MySQL">
+      <created>1696161300914</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1696161300914</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Начало работы" />
+    <MESSAGE value="Выполнил Задание 1" />
+    <MESSAGE value="Добавил Скрин к Заданию 1" />
+    <MESSAGE value="Добавил Скрин к Заданию 2" />
+    <MESSAGE value="Исправил команду cd~/Ферма" />
+    <MESSAGE value="Третье задания и три снимка" />
+    <MESSAGE value="Четвертое задание" />
+    <MESSAGE value="Четвертое задание со скрином" />
+    <MESSAGE value="Пятое задание" />
+    <MESSAGE value="Шестое задание Диаграмма" />
+    <MESSAGE value="Восьмое задание с таблицей" />
+    <MESSAGE value="Девятое  задание с таблицей" />
+    <MESSAGE value="Десятое   задание" />
+    <MESSAGE value="Одинадцатое   задание" />
+    <MESSAGE value="12  задание" />
+    <MESSAGE value="13  задание" />
+    <MESSAGE value="14 задание создал интерфейс All_Animal_Registry" />
+    <MESSAGE value="14 задание создал определил класс Pet с перечислением и методами" />
+    <MESSAGE value="14 задание добавил метод &quot;Команды&quot; для Питомцев" />
+    <MESSAGE value="14 Добавил класс &quot;Вьючных&quot;" />
+    <MESSAGE value="14 Создал абстракцию интерфейс и наследие младших классов" />
+    <MESSAGE value="14  абстакцию и наследие младших классов упростил" />
+    <MESSAGE value="Внес изменения и исправилт ошибки в MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внес изменения и исправилт ошибки в MySQL" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
