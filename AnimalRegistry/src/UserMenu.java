@@ -196,6 +196,8 @@ public class UserMenu {
                     String table_name = "";
                     Creator creator = new Creator();
 
+
+
                     System.out.println("введите Класс животного : 1 - если класс Вьючные " +
                             " : 2 - если класс Домашние");
                     classType = Integer.parseInt(scan.next());
