@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 
+<<<<<<< HEAD
 public class Pet extends BaseAnimal {
 
     private String name;
@@ -25,6 +26,28 @@ public class Pet extends BaseAnimal {
 
 
 
+=======
+public abstract class Pet extends BaseAnimal {
+    int petId;
+    private String name;
+    private ClassType mainClass;
+    private int type;
+    private LocalDate birthday;
+    private ArrayList Commands  ;
+
+
+    public Pet(int petId,String name, ClassType mainClass,int type,LocalDate birthday, ArrayList Commands) throws ParseException {
+        super(petId, name, mainClass,type, birthday, Commands);
+    }
+
+        public void setPetId(int petId) {
+            this.petId = petId;
+        }
+
+        public int getPetId() {
+            return petId;
+        }
+>>>>>>> origin/main
         public void setPetType(int type) {
             this.type =  type ;
         }
@@ -33,9 +56,16 @@ public class Pet extends BaseAnimal {
             return  type;
         }
 
+<<<<<<< HEAD
         public int getClassType() { return 2 ;}
 
 
+=======
+
+        public ClassType getClassType() {
+            return ClassType.Домашние;
+        }
+>>>>>>> origin/main
         public void setName(String name) {
             this.name = name;
         }
@@ -56,11 +86,16 @@ public class Pet extends BaseAnimal {
 
         @Override
         public String toString() {
+<<<<<<< HEAD
             String str =   getName()  + " " + getClassType() + " " + getPetType()  + " " +
+=======
+            String str = getPetId() + " " + getName()  + " " + getClassType() + " " + getPetType()  + " " +
+>>>>>>> origin/main
                new SimpleDateFormat("yyyy-MM-dd").format(birthday) + " " + String.join(" / ",Commands);
             return str;
         }
 
+<<<<<<< HEAD
         public String getSkills() {
             return this.Commands;
         }
@@ -69,5 +104,30 @@ public class Pet extends BaseAnimal {
             this.Commands = skills;
         }
 
+=======
+        public ArrayList getSkills() {
+            return this.Commands;
+        }
+
+        public void setSkills(ArrayList skills) {
+            this.Commands = skills;
+        }
+
+
+
+        public Pet createNewPet(int petId,String name, ClassType Type, int type, LocalDate birthday, ArrayList Commands) {
+
+            Pet pet = createNewPet( petId, name,  Type, type,  birthday, Commands);
+            pet.setPetId(petId);
+            pet.setName(name);
+
+            pet.setPetType(type);
+            pet.setBirthday(birthday);
+            pet.setSkills(Commands);
+
+
+            return pet;
+        }
+>>>>>>> origin/main
     }
 

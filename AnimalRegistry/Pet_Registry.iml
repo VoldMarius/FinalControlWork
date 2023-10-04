@@ -5,8 +5,13 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
+=======
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+>>>>>>> origin/main
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -16,6 +21,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+<<<<<<< HEAD
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -34,5 +40,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+=======
+>>>>>>> origin/main
   </component>
 </module>
