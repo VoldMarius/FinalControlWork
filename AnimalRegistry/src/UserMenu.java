@@ -350,15 +350,140 @@ public class UserMenu {
                             System.out.println("команды которые он знает выбранный питомец: " + columnValue);
                         }
 
-//                        resultSet.close();
-//                        statement.close();
-//                        connection.close();
+
                     } catch (SQLException e) {
                         e.printStackTrace();
 
+                        case 6:
+                            System.out.println("Введите Тип животного - Класс кторого нужно изменить ");
+                            System.out.println("  1 -  если Верблюд ");
+                            System.out.println("  2 -  если Лошадь");
+                            System.out.println("  3 -  если Осел ");
+                            System.out.println("  4 -  если Хомяк ");
+                            System.out.println("  5 -  если Собака");
+                            System.out.println("  6 -  если Кошка ");
+                            System.out.println("  7 -  если передумали");
+                            s = scan.next();
+                            i = 0;
 
+                            try {
+                                i = Integer.parseInt(s);
+                            } catch (NumberFormatException var24) {
+                                System.out.println("Неверный формат ввода");
+                            }
+
+                            table_name = "";
+                            if (i == 1) {
+                                table_name = "camels";
+                            }
+
+                            if (i == 2) {
+                                table_name = "horses";
+                            }
+
+                            if (i == 3) {
+                                table_name = "donkeys";
+                            }
+
+                            if (i == 4) {
+                                table_name = "hamsters";
+                            }
+
+                            if (i == 5) {
+                                table_name = "dogs";
+                            }
+
+                            if (i == 6) {
+                                table_name = "cats";
+                            }
+
+                            if (i != 7) {
+                                statement = connection.createStatement();
+                                resultSet = statement.executeQuery("SELECT id, name FROM " + table_name);
+                                tableCreator = new TableCreator();
+                                tableCreator.createTable(resultSet);
+                                System.out.println("Введите номер id строки Животного чтобы изменить его класс");
+                                number = Integer.parseInt(scan.next());
+                                System.out.println("Введите новое значение  класса для выбраного животного");
+                                System.out.println("1 -Вьючное или 2 - Домашнее");
+                                int newClass = Integer.parseInt(scan.next());
+
+                                try {
+                                    statement = connection.createStatement();
+                                    columnValue = "UPDATE " + table_name + " SET typeOfanimal = '" + newClass + "' WHERE id = " + number + ";";
+                                    statement.executeUpdate(columnValue);
+                                } catch (SQLException var23) {
+                                    throw new RuntimeException(var23);
+                                }
+
+                                System.out.println("Класс Изменен!!");
+                            }
+                            break;
+                        case 7:
+                            System.out.println("Введите Тип животного - Для обучения ");
+                            System.out.println("  1 -  если Верблюд ");
+                            System.out.println("  2 -  если Лошадь");
+                            System.out.println("  3 -  если Осел ");
+                            System.out.println("  4 -  если Хомяк ");
+                            System.out.println("  5 -  если Собака");
+                            System.out.println("  6 -  если Кошка ");
+                            System.out.println("  7 -  если передумали");
+                            s = scan.next();
+                            i = 0;
+
+                            try {
+                                i = Integer.parseInt(s);
+                            } catch (NumberFormatException var22) {
+                                System.out.println("Неверный формат ввода");
+                            }
+
+                            table_name = "";
+                            if (i == 1) {
+                                table_name = "camels";
+                            }
+
+                            if (i == 2) {
+                                table_name = "horses";
+                            }
+
+                            if (i == 3) {
+                                table_name = "donkeys";
+                            }
+
+                            if (i == 4) {
+                                table_name = "hamsters";
+                            }
+
+                            if (i == 5) {
+                                table_name = "dogs";
+                            }
+
+                            if (i == 6) {
+                                table_name = "cats";
+                            }
+
+                            if (i != 7) {
+                                statement = connection.createStatement();
+                                resultSet = statement.executeQuery("SELECT id, name FROM " + table_name);
+                                tableCreator = new TableCreator();
+                                tableCreator.createTable(resultSet);
+                                System.out.println("Введите номер id строки Животного чтобы изменить его класс");
+                                number = Integer.parseInt(scan.next());
+                                System.out.println("Введите команду для обучения");
+                                commands = scan.next();
+
+                                try {
+                                    statement = connection.createStatement();
+                                    columnValue = "UPDATE " + table_name + " SET  Commands  = '" + commands + "' WHERE id = " + number + ";";
+                                    statement.executeUpdate(columnValue);
+                                } catch (SQLException var21) {
+                                    throw new RuntimeException(var21);
+                                }
+
+                                System.out.println("Животное Обучено команде '" + commands + "' !!");
+                            }
                     }
                 }
+
             }
         }
-    }}
