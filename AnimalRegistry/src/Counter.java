@@ -1,18 +1,27 @@
+public  class Counter  implements AutoCloseable {
+    private int count;
 
 
-    public class Counter implements AutoCloseable {
+            public void count() {
+                count = 0;
+            }
 
-        static int sum;
-        {
-            sum = 0;
+            public void add() {
+                count++;
+                System.out.println("Добавлено новое животное. Текущее значение счетчика: " + count);
+            }
+
+            public int getcount() {
+                return count;
+            }
+
+
+
+    @Override
+    public void close() throws Exception {
+        if (count == 0) {
+            throw new Exception("Работа с объектом Счетчик была не в ресурсном try или ресурс остался открыт");
         }
-
-        public void add() {
-            sum++;
-        }
-
-        @Override
-        public void close() {
-            System.out.println("Counter closed");
-        }
+        System.out.println("Закрытие ресурса Счетчик");
     }
+}

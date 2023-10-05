@@ -1,4 +1,4 @@
-package MySQL;
+package AnimalTypes;
 
 public enum ClassType {
 

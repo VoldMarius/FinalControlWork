@@ -32,7 +32,7 @@
 ![Задание 2.PNG](https://github.com/VoldMarius/FinalControlWork/blob/3e878b181514b4e21b6116c1c67340a4d069ffec/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%202.PNG)
 
 ## Задание 3.
-   Подключить дополнительный репозиторий MySQL. Установить любой пакет
+   Подключить дополнительный репозиторий AnimalTypes. Установить любой пакет
    из этого репозитория.
 
       sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.23-1_all.deb
@@ -74,7 +74,7 @@
 
 ## Задание 7.
 
-   В подключенном MySQL репозитории создать базу данных “Друзья
+   В подключенном AnimalTypes репозитории создать базу данных “Друзья
    человека”
 
      CREATE DATABASE IF NOT EXISTS FriendsOfMan;

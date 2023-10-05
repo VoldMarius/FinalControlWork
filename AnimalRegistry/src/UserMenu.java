@@ -1,7 +1,7 @@
 
 import Classes.Pack;
 import Classes.Pet;
-import MySQL.ClassType;
+import AnimalTypes.ClassType;
 import java.sql.*;
 import java.text.ParseException;
 import java.time.LocalDate;
@@ -15,8 +15,6 @@ public class UserMenu {
         String username = "root";
         String password = "663300";
         Connection connection = DriverManager.getConnection(url, username, password);
-        Statement stmt = connection.createStatement();
-
 
         Scanner scan = new Scanner(System.in);
         int x = 0;
@@ -30,7 +28,7 @@ public class UserMenu {
             System.out.println("3 - Показать Таблицу по выбору");
             System.out.println("4 - Завести новое животное ");
             System.out.println("5 - Показать список команд животного");
-            System.out.println("6 - Определить класс животного");
+            System.out.println("6 - Показать список животных одного класса");
             System.out.println("7 - Обучить животное новым командам");
             System.out.println("8 - Выйти из программы");
             System.out.println("---------------------");
@@ -46,7 +44,7 @@ public class UserMenu {
 
                     // Создание запроса
                     Statement statement = connection.createStatement();
-                    String sm0 = "DROP TABLE  IF  EXISTS AllAnimals ";
+                    String sm0 = "DROP TABLE   AllAnimals ";
                     statement.execute(sm0);
 
                     String sm1 = "CREATE TABLE IF NOT EXISTS AllAnimals " +
@@ -85,7 +83,6 @@ public class UserMenu {
                     System.out.println("Введите Тип животного для удаления ");
                     System.out.println("  1 -  если Верблюд ");
                     System.out.println("  2 -  если Лошадь");
-                    System.out.println("  3 -  если Осел");
                     System.out.println("  4 -  если Хомяк ");
                     System.out.println("  5 -  если Собака");
                     System.out.println("  6 -  если Кошка ");
@@ -132,8 +129,8 @@ public class UserMenu {
                     int number = Integer.parseInt(scan.next());
 
                     statement = connection.createStatement();
-                    String sql7 = "DELETE FROM " + table_name + " WHERE id  = " + number + ";";
-                    statement.executeUpdate(sql7);
+                    String sql = "DELETE FROM " + table_name + " WHERE id  = " + number + ";";
+                    statement.executeUpdate(sql);
 
                     System.out.println("Строка с id = " + number + " удалена из таблицы.");
 
@@ -191,12 +188,10 @@ public class UserMenu {
                 }
                 case 4 -> {
 
-                    int classType;
+                    int classType ;
                     int subType = 0;
                     String table_name = "";
                     Creator creator = new Creator();
-
-
 
                     System.out.println("введите Класс животного : 1 - если класс Вьючные " +
                             " : 2 - если класс Домашние");
@@ -219,7 +214,7 @@ public class UserMenu {
 
                     System.out.println("введите имя ");
                     String name = scan.next();
-                    System.out.println("введите Дату рождения " + name + " в формате - dd.MM.yyyy");
+                    System.out.println("введите Дату рождения " + name + " в формате - yyyy-MM-dd");
                     String dateString = scan.next();
                     DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
                     LocalDate birthday = LocalDate.parse(dateString, dateFormatter);
@@ -228,9 +223,19 @@ public class UserMenu {
                     System.out.println("введите команды,  которые знает  " + name);
                     String commands = scan.next();
 
+                    Pack pack = creator.newPackCreator(name, subType, birthday, commands);
+                    try (Counter count = new Counter(); ) {
+                        if (pack.getName() != null && pack.getPackType() > 0 && pack.getPackType() < 3
+                                && pack.getBirthday() != null && pack.getSkills() != null)
+                       count.add();
+                    }  catch (Exception e) {
+                        e.printStackTrace();
+                        break;
+                    }
+
 
                     if (classType == 1) {
-                        Pack pack = creator.newPackCreator(name, subType, birthday, commands);
+
                         if (subType == 1) {
                             table_name = "camels";
                         }
@@ -242,6 +247,8 @@ public class UserMenu {
                         }
 
                         // Создание запроса
+
+
 
                         Statement statement = connection.createStatement();
                         String sm3 = "INSERT  INTO " + table_name + " (  Name, Birthday, Commands, typeOfanimal) " +
@@ -323,7 +330,7 @@ public class UserMenu {
 
                     // Создание запроса
                     Statement statement = connection.createStatement();
-                    ResultSet resultSet = statement.executeQuery("SELECT id, name FROM " + table_name);
+                    ResultSet resultSet = statement.executeQuery("SELECT  * FROM " + table_name);
 
                     TableCreator tableCreator = new TableCreator();
                     tableCreator.createTable(resultSet);
@@ -352,136 +359,6 @@ public class UserMenu {
 
                     }
                 }
-                case 6 -> {
-                    // Создание запроса
-
-                    System.out.println("Введите Тип животного - Класс кторого нужно изменить ");
-                    System.out.println("  1 -  если Верблюд ");
-                    System.out.println("  2 -  если Лошадь");
-                    System.out.println("  3 -  если Осел ");
-                    System.out.println("  4 -  если Хомяк ");
-                    System.out.println("  5 -  если Собака");
-                    System.out.println("  6 -  если Кошка ");
-                    System.out.println("  7 -  если передумали");
-                    s = scan.next();
-                    int i = 0;
-                    try {
-                        i = Integer.parseInt(s);
-                    } catch (NumberFormatException e) {
-                        System.out.println("Неверный формат ввода");
-                    }
-                    String table_name = "";
-                    if (i == 1) {
-                        table_name = "camels";
-                    }
-                    if (i == 2) {
-                        table_name = "horses";
-                    }
-                    if (i == 3) {
-                        table_name = "donkeys";
-                    }
-                    if (i == 4) {
-                        table_name = "hamsters";
-                    }
-                    if (i == 5) {
-                        table_name = "dogs";
-                    }
-                    if (i == 6) {
-                        table_name = "cats";
-                    }
-                    if (i == 7) {
-                        break;
-                    }
-
-
-                    // Создание запроса
-                    Statement statement = connection.createStatement();
-                    ResultSet resultSet = statement.executeQuery("SELECT id, name FROM " + table_name);
-
-                    TableCreator tableCreator = new TableCreator();
-                    tableCreator.createTable(resultSet);
-                    System.out.println("Введите номер id строки Животного чтобы изменить его класс");
-                    int number = Integer.parseInt(scan.next());
-                    System.out.println("Введите новое значение  класса для выбраного животного");
-                    System.out.println("1 -Вьючное или 2 - Домашнее");
-                    int newClass = Integer.parseInt(scan.next());
-                    try {
-
-                        statement = connection.createStatement();
-                        String sm3 = "UPDATE " + table_name + " SET typeOfanimal = '" + newClass + "' WHERE id = " + number + ";";
-                        statement.executeUpdate(sm3);
-
-                    } catch (SQLException e) {
-                        throw new RuntimeException(e);
-                    } System.out.println("Класс Изменен!!");
-                }
-                case 7 -> {
-                    // Создание запроса
-
-                    System.out.println("Введите Тип животного - Для обучения ");
-                    System.out.println("  1 -  если Верблюд ");
-                    System.out.println("  2 -  если Лошадь");
-                    System.out.println("  3 -  если Осел ");
-                    System.out.println("  4 -  если Хомяк ");
-                    System.out.println("  5 -  если Собака");
-                    System.out.println("  6 -  если Кошка ");
-                    System.out.println("  7 -  если передумали");
-                    s = scan.next();
-                    int i = 0;
-                    try {
-                        i = Integer.parseInt(s);
-                    } catch (NumberFormatException e) {
-                        System.out.println("Неверный формат ввода");
-                    }
-                    String table_name = "";
-                    if (i == 1) {
-                        table_name = "camels";
-                    }
-                    if (i == 2) {
-                        table_name = "horses";
-                    }
-                    if (i == 3) {
-                        table_name = "donkeys";
-                    }
-                    if (i == 4) {
-                        table_name = "hamsters";
-                    }
-                    if (i == 5) {
-                        table_name = "dogs";
-                    }
-                    if (i == 6) {
-                        table_name = "cats";
-                    }
-                    if (i == 7) {
-                        break;
-                    }
-
-
-                    // Создание запроса
-                    Statement statement = connection.createStatement();
-                    ResultSet resultSet = statement.executeQuery("SELECT id, name FROM " + table_name);
-
-                    TableCreator tableCreator = new TableCreator();
-                    tableCreator.createTable(resultSet);
-                    System.out.println("Введите номер id строки Животного чтобы изменить его класс");
-                    int number = Integer.parseInt(scan.next());
-                    System.out.println("Введите команду для обучения");
-
-                    String commands = scan.next();
-
-                    try {
-
-                        statement = connection.createStatement();
-                        String sm3 = "UPDATE " + table_name + " SET  Commands  = '" + commands + "' WHERE id = " + number + ";";
-                        statement.executeUpdate(sm3);
-
-                    } catch (SQLException e) {
-                        throw new RuntimeException(e);
-                    } System.out.println("Животное Обучено команде '"+commands+"' !!");
-                }
             }
         }
-    }
-}
-
-
+    }}

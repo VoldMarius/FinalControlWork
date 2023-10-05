@@ -3,20 +3,12 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-<<<<<<< HEAD
-    <orderEntry type="jdk" jdkName="19" jdkType="JavaSDK" />
-=======
     <orderEntry type="inheritedJdk" />
->>>>>>> origin/main
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-<<<<<<< HEAD
-          <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-8.1.0/mysql-connecto/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar!/" />
-=======
-          <root url="jar://$MODULE_DIR$/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar!/" />
->>>>>>> origin/main
+          <root url="jar://$USER_HOME$/Desktop/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
