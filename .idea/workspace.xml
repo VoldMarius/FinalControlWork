@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b0ba15-af03-4108-8beb-1ceb7e693d44" name="Changes" comment="Внес изменения и исправилт ошибки в MySQL" />
+    <list default="true" id="13b0ba15-af03-4108-8beb-1ceb7e693d44" name="Changes" comment="Внес изменения и закончил Try Catch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/Maxim/Desktop/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar",
+    "last_opened_file_path": "C:/Users/Maxim/Desktop/GB/Итоговая контрольная работа",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -95,13 +95,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695365177427</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Добавил Скрин к Заданию 1">
-      <created>1695370624841</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1695370624841</updated>
     </task>
     <task id="LOCAL-00005" summary="Добавил Скрин к Заданию 1">
       <created>1695370832989</created>
@@ -439,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696161300914</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Внес изменения и закончил Try Catch">
+      <created>1696497316800</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1696497316802</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,7 +447,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -477,6 +489,7 @@
     <MESSAGE value="14 Создал абстракцию интерфейс и наследие младших классов" />
     <MESSAGE value="14  абстакцию и наследие младших классов упростил" />
     <MESSAGE value="Внес изменения и исправилт ошибки в MySQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Внес изменения и исправилт ошибки в MySQL" />
+    <MESSAGE value="Внес изменения и закончил Try Catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внес изменения и закончил Try Catch" />
   </component>
 </project>
